@@ -26,11 +26,11 @@ class userMad extends React.Component{
           </div>
           <br />
           <div>
-            <input id="verb" type="text" placeholder="enter a verb" />
+            <input id="verb" type="text" placeholder="enter a verb" onChange={this.handleChange}/>
           </div>
           <br />
           <div>
-            <input id="adj" type="text" placeholder="enter an adjective" />
+            <input id="adj" type="text" placeholder="enter an adjective" onChange={this.handleChange} />
           </div>
           <br />
           <button disabled={!(noun)} onClick={this.handleSubmit}>
@@ -58,6 +58,10 @@ class userMad extends React.Component{
         adj: adj
       });
       console.log( noun+ verb+ adj)
+  }
+
+  handleSentence = e => {
+    
   }
 
 
