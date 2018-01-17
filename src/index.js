@@ -7,6 +7,9 @@ import Img from 'react-image'
 
 import './style.css';
 
+
+import './style.css';
+
 render(
   <BrowserRouter>
   <App/>

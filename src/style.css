@@ -1,3 +1,4 @@
+
 /* google font */
 
 @font-face {
@@ -15,7 +16,7 @@ html {
 }
 h1 {
   font-size: 950%;
-  opacity: 1
+  opacity: 1;
 }
 h1 {
   animation-duration: 3s;
@@ -38,7 +39,9 @@ h1 {
 
 h1:hover {
   transform: scale(1.1);
-  opacity: .9
+
+  opacity: 1
+
 }
 
 .menu {
