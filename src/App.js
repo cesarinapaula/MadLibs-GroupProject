@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Link, Route } from 'react-router-dom';
 import Home from "./Home";
 import userMad from "./Madlibs/userMadlibs";
-import Img from 'react-image'
+//import Img from 'react-image'
 
 const App = () => (
   <div>
