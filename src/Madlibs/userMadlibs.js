@@ -63,7 +63,9 @@ class userMad extends React.Component {
     const{noun, verb, adj} = this.state
     return (
       <div>
-        <h4>Your Mad Lib:</h4>
+
+        <h4>Your Mad Lib</h4>
+
         <p>
           Mary went to the {noun} to get some {noun}. On the way, she {verb}ed a{" "}
           {adj} {noun}
