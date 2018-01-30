@@ -1,13 +1,26 @@
-import axios from 'axios';
+const verb = ["run", "dance", "walk", "call", "study", "bake", "play", "build", "cook", ""]
+const noun = ["house", "cat", "chair", "table", "book", "building", "cake", "cookie", "candy"]
+const adjective = ['blue', 'tall', 'small', 'heavy', "red", "pretty", "yellow", "little", ""]
 
-const getAdjective = () => axios.get("http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=false&includePartOfSpeech=adjective&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=1&maxLength=-1&limit=1&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5");
 
-const getNoun = () => axios.get("http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=false&includePartOfSpeech=noun&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=1&maxLength=-1&limit=1&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5");
+const getRandomVerb = () => {
+  let indexVerb = Math.floor(Math.random() * verb.length);
+  return verb[indexVerb];
+}
 
-const getVerb = () => axios.get("http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=false&includePartOfSpeech=verb&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=1&maxLength=-1&limit=1&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5");
+const getRandomNoun = () => {
+  let indexNoun = Math.floor(Math.random() * noun.length);
+  return noun[indexNoun];
+}
+
+const getRandomAdj = () => {
+  let indexAdj = Math.floor(Math.random() * adjective.length);
+  return adjective[indexAdj];
+}
 
 export default {
-  getAdjective,
-  getNoun,
-  getVerb
+  getRandomVerb,
+  getRandomNoun,
+  getRandomAdj,
+
 }

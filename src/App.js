@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Link, Route } from 'react-router-dom';
 import Home from "./Home";
 import userMad from "./Madlibs/userMadlibs";
-//import Img from 'react-image'
+import RandomMadLibs from "./Madlibs/RandomMadLibs";
 
 const App = () => (
   <div>
@@ -16,6 +16,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/create" component={userMad} />
+      <Route path="/random" component={RandomMadLibs} />
 
     </Switch>
     
